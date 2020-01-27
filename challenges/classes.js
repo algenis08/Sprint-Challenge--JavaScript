@@ -3,7 +3,6 @@ function CuboidMaker (length, width, height){
     this.length = length;
     this.width = width;
      this.height = height;
-  
   }
 
   CuboidMaker.prototype.volume = function(length, width, height){
