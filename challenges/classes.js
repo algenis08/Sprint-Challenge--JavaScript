@@ -18,7 +18,7 @@ function CuboidMaker (length, width, height){
     width:  5, 
     height: 5,
   });
-  
+
 class CuboidMaker2 {
   constructor(option){
     this.length = option.length
