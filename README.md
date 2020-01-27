@@ -29,14 +29,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
 1. Describe the biggest difference between `.forEach` & `.map`.
-
+    forEach() allows the mutation of the original array, 
+    while map() returns a new array of the same size. 
 2. What is the difference between a function and a method?
-
+    A function is a piece of code that is called by name. A method is a piece of code that is called by a name that is associated with an object.
 3. What is closure?
-
+    A closure is a function that has access to its outer function scope even after the outer function has returned. 
 4. Describe the four rules of the 'this' keyword.
-
+    Window/Global Object Binding
+    Implicit Binding
+    New Binding
+    Explicit Binding
 5. Why do we need super() in an extended class?
+    Super() is needed to call the methods of the parent class and used within the constructor function.
 
 ## Project Set up
 
@@ -80,7 +85,7 @@ Create constructors, bind methods, and create cuboids in this prototypes challen
 Once you have completed the prototypes challenge, it's time to convert all your hard work into classes.
 * [ ] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
 
-In your solutions, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
+In your solutions, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checkindg on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
 ## Stretch Problems
 
