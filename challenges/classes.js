@@ -1,24 +1,3 @@
-
-function CuboidMaker (length, width, height){
-    this.length = length;
-    this.width = width;
-     this.height = height;
-  }
-
-  CuboidMaker.prototype.volume = function(length, width, height){
-    return (length * width * height);
-  }
-
-  CuboidMaker.prototype.surfaceArea = function(length, width, height){
-    return (length * width + length * height + width * height);
-  }
-  
-  cuboid = new CuboidMaker ({
-    length: 4,  
-    width:  5, 
-    height: 5,
-  });
-
 class CuboidMaker2 {
   constructor(option){
     this.length = option.length

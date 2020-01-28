@@ -13,10 +13,8 @@ let tyrannosaurus = {
   weight:  '7000kg',
   length: '12m',
   period:  'Late Cretaceous',
+  roar: 'RAWERSRARARWERSARARARRRR'
   
-  roar: function(){
-    return `RAWERSRARARWERSARARARRRR!`
-  }
 }
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
 let stegosaurus = {
@@ -73,9 +71,9 @@ const graduates = [
 /* Request 1: Create a new array called universities that contains all the universities in the graduates array. This will be an array of strings.
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
-const universities = [];
-  uni = graduates.map(university => university.university);
-  universities.sort();
+const universities = graduates.map(graduate => graduate.university);
+  universities.sort();;
+
 console.log(universities);
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. This will be an array of strings.
@@ -84,15 +82,14 @@ The resulting contact information strings should have a space between the first 
 "Josh josh@example.com"
 
 Log the result of your new array. */
-const contactInfo = [];
-   Info = graduates.map((student) => {
-    return `${student.first_name} ${student.email}`
-  });
+const contactInfo = graduates.map((student) => {
+  return `${student.first_name} ${student.email}`
+});
+    
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
-const unisWithUni = [];
-withUni = graduates.filter(uni => uni.university.includes("uni"));
+const unisWithUni = graduates.filter(uni => uni.university.includes("uni"));
 console.log(unisWithUni);
 
 
@@ -134,10 +131,9 @@ Using map, create a new array of strings named lowCaseAnimalNames, each string f
 */
 
 const lowCaseAnimalNames = [];
-  zooAnimals.forEach(zooAnimal => {
-  lowCaseAnimalNames.push('Name: ' + zooAnimal.animal_name + ", Scientific: " + zooAnimal.scientific_name);
-
- });
+zooAnimals.map(function(object){
+  return lowCaseAnimalNames.push(object.animal_name.toLowerCase());
+})
  
 
 console.log(lowCaseAnimalNames);
@@ -148,8 +144,8 @@ The zoos are concerned about animals with a lower population count. Using filter
 create a new array of objects called lowPopulationAnimals which contains only the animals with a population less than 5.
 
 */
-const lowPopulationAnimals = [];
-low = zooAnimals.filter(function(count){
+const lowPopulationAnimals = 
+zooAnimals.filter(function(count){
   if (count.population < 5){
     return count.population
   }
@@ -164,9 +160,9 @@ Remember the reduce method takes two arguments: a callback
  (which itself takes two args), and an initial value for the count.
 
 */
-const populationTotal = 0;
- Total = zooAnimals.reduce((accum, items) => accum + (items.population || 0),0);
+const populationTotal = zooAnimals.reduce((accum, items) => accum + (items.population || 0),0);
 console.log(populationTotal);
+ 
 
 
 /*
